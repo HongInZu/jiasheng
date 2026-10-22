@@ -1,0 +1,31 @@
+async (page) => {
+  await page.setViewportSize({width:1280,height:900});
+  await page.getByRole('button',{name:'看看故事的模樣',exact:true}).click();
+  await page.getByRole('textbox',{name:'故事標題',exact:true}).waitFor();
+  await page.getByRole('textbox',{name:'故事標題',exact:true}).fill('保存按下時版本');
+  await page.evaluate(()=>{
+    const original=IDBDatabase.prototype.transaction;
+    const descriptor=Object.getOwnPropertyDescriptor(IDBTransaction.prototype,'oncomplete');
+    window.qaRestoreTransactions=()=>IDBDatabase.prototype.transaction=original;
+    IDBDatabase.prototype.transaction=function(...args){
+      const tx=original.apply(this,args);
+      if(args[1]==='readwrite') Object.defineProperty(tx,'oncomplete',{configurable:true,set(fn){
+        descriptor.set.call(tx,event=>{window.qaSaveHeld=true; window.qaFinishSave=()=>fn.call(tx,event)});
+      },get(){return descriptor.get.call(tx)}});
+      return tx;
+    };
+  });
+  await page.getByRole('button',{name:'儲存',exact:true}).click();
+  await page.waitForFunction(()=>window.qaSaveHeld);
+  await page.getByRole('textbox',{name:'故事標題',exact:true}).fill('等待儲存期間的新修改');
+  await page.getByRole('button',{name:'家聲首頁',exact:true}).click();
+  const navigationBlocked=await page.getByRole('textbox',{name:'故事標題',exact:true}).count()===1;
+  await page.evaluate(()=>{window.qaRestoreTransactions();window.qaFinishSave()});
+  await page.waitForFunction(()=>!document.querySelector('.save-actions button').disabled);
+  const record=await page.evaluate(async()=>{
+    const {listSessions}=await import('/src/storage.ts');
+    const s=(await listSessions()).find(s=>s.title==='保存按下時版本');
+    return s ? {title:s.story.title,audioBytes:s.audio.size} : null;
+  });
+  return {navigationBlocked,record,editorTitle:await page.getByRole('textbox',{name:'故事標題',exact:true}).inputValue(),saveState:await page.locator('.save-state').innerText(),notice:await page.locator('.toast').innerText()};
+}

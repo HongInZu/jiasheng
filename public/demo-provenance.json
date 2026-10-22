@@ -1,0 +1,692 @@
+{
+  "kind": "fictional-script-synthetic-voice",
+  "model": "speech/elevenlabs-v4",
+  "voice": "James Gao",
+  "sourceUrl": "https://cdn.creativeclaw.co/u/8d12cca9/audio/2473af3f-5cc8-43cc-bc73-7413ea6db6a5.mp3",
+  "jobId": "2f56428c-9d56-4a42-ad71-18dac92dd309",
+  "script": "我第一次離開家去工作，大概是二十歲那一年。確切是哪一年，我真的記不清了。那時候坐了很久的火車，行李裡只有兩套衣服，還有你阿嬤塞給我的飯糰。[long pause] 第一次領到薪水，我沒有先買自己的東西。我去買了一台小小的收音機，寄回家給你阿公。他每天傍晚都會坐在門口聽廣播。[long pause] 後來那台收音機壞了，他也捨不得丟。很多年以後我才知道，他在背面貼了一張紙，上面寫著，兒子第一份薪水。[long pause] 我一直記得的，其實不是那筆錢。是他收到包裹以後，打電話來，只說了一句，你在外面有沒有吃飽。",
+  "wordTimings": [
+    {
+      "text": "我",
+      "startSeconds": 0,
+      "endSeconds": 0.24
+    },
+    {
+      "text": "第一次",
+      "startSeconds": 0.24,
+      "endSeconds": 0.72,
+      "separatorBefore": ""
+    },
+    {
+      "text": "離開",
+      "startSeconds": 0.72,
+      "endSeconds": 1.04,
+      "separatorBefore": ""
+    },
+    {
+      "text": "家",
+      "startSeconds": 1.04,
+      "endSeconds": 1.28,
+      "separatorBefore": ""
+    },
+    {
+      "text": "去",
+      "startSeconds": 1.28,
+      "endSeconds": 1.36,
+      "separatorBefore": ""
+    },
+    {
+      "text": "工作，",
+      "startSeconds": 1.36,
+      "endSeconds": 2.32,
+      "separatorBefore": ""
+    },
+    {
+      "text": "大概是",
+      "startSeconds": 2.32,
+      "endSeconds": 3.04,
+      "separatorBefore": ""
+    },
+    {
+      "text": "二十",
+      "startSeconds": 3.04,
+      "endSeconds": 3.44,
+      "separatorBefore": ""
+    },
+    {
+      "text": "歲",
+      "startSeconds": 3.44,
+      "endSeconds": 3.6,
+      "separatorBefore": ""
+    },
+    {
+      "text": "那一",
+      "startSeconds": 3.6,
+      "endSeconds": 3.84,
+      "separatorBefore": ""
+    },
+    {
+      "text": "年。",
+      "startSeconds": 3.84,
+      "endSeconds": 5.04,
+      "separatorBefore": ""
+    },
+    {
+      "text": "確切",
+      "startSeconds": 5.04,
+      "endSeconds": 5.52,
+      "separatorBefore": ""
+    },
+    {
+      "text": "是",
+      "startSeconds": 5.52,
+      "endSeconds": 5.68,
+      "separatorBefore": ""
+    },
+    {
+      "text": "哪一",
+      "startSeconds": 5.68,
+      "endSeconds": 6.08,
+      "separatorBefore": ""
+    },
+    {
+      "text": "年，",
+      "startSeconds": 6.08,
+      "endSeconds": 6.64,
+      "separatorBefore": ""
+    },
+    {
+      "text": "我",
+      "startSeconds": 6.64,
+      "endSeconds": 6.8,
+      "separatorBefore": ""
+    },
+    {
+      "text": "真的",
+      "startSeconds": 6.8,
+      "endSeconds": 7.12,
+      "separatorBefore": ""
+    },
+    {
+      "text": "記",
+      "startSeconds": 7.12,
+      "endSeconds": 7.28,
+      "separatorBefore": ""
+    },
+    {
+      "text": "不清",
+      "startSeconds": 7.28,
+      "endSeconds": 7.6,
+      "separatorBefore": ""
+    },
+    {
+      "text": "了。",
+      "startSeconds": 7.6,
+      "endSeconds": 8.72,
+      "separatorBefore": ""
+    },
+    {
+      "text": "那時候",
+      "startSeconds": 8.72,
+      "endSeconds": 9.36,
+      "separatorBefore": ""
+    },
+    {
+      "text": "坐了",
+      "startSeconds": 9.36,
+      "endSeconds": 9.68,
+      "separatorBefore": ""
+    },
+    {
+      "text": "很久",
+      "startSeconds": 9.68,
+      "endSeconds": 10,
+      "separatorBefore": ""
+    },
+    {
+      "text": "的",
+      "startSeconds": 10,
+      "endSeconds": 10.16,
+      "separatorBefore": ""
+    },
+    {
+      "text": "火車，",
+      "startSeconds": 10.16,
+      "endSeconds": 11.28,
+      "separatorBefore": ""
+    },
+    {
+      "text": "行李",
+      "startSeconds": 11.28,
+      "endSeconds": 11.6,
+      "separatorBefore": ""
+    },
+    {
+      "text": "裡",
+      "startSeconds": 11.6,
+      "endSeconds": 11.92,
+      "separatorBefore": ""
+    },
+    {
+      "text": "只有",
+      "startSeconds": 11.92,
+      "endSeconds": 12.16,
+      "separatorBefore": ""
+    },
+    {
+      "text": "兩",
+      "startSeconds": 12.16,
+      "endSeconds": 12.4,
+      "separatorBefore": ""
+    },
+    {
+      "text": "套",
+      "startSeconds": 12.4,
+      "endSeconds": 12.64,
+      "separatorBefore": ""
+    },
+    {
+      "text": "衣服，",
+      "startSeconds": 12.64,
+      "endSeconds": 13.44,
+      "separatorBefore": ""
+    },
+    {
+      "text": "還有",
+      "startSeconds": 13.44,
+      "endSeconds": 13.68,
+      "separatorBefore": ""
+    },
+    {
+      "text": "你",
+      "startSeconds": 13.68,
+      "endSeconds": 13.76,
+      "separatorBefore": ""
+    },
+    {
+      "text": "阿嬤",
+      "startSeconds": 13.76,
+      "endSeconds": 14.24,
+      "separatorBefore": ""
+    },
+    {
+      "text": "塞",
+      "startSeconds": 14.24,
+      "endSeconds": 14.4,
+      "separatorBefore": ""
+    },
+    {
+      "text": "給",
+      "startSeconds": 14.4,
+      "endSeconds": 14.48,
+      "separatorBefore": ""
+    },
+    {
+      "text": "我的",
+      "startSeconds": 14.48,
+      "endSeconds": 14.88,
+      "separatorBefore": ""
+    },
+    {
+      "text": "飯糰。",
+      "startSeconds": 14.88,
+      "endSeconds": 15.36,
+      "separatorBefore": ""
+    },
+    {
+      "text": "第一次",
+      "startSeconds": 16.92,
+      "endSeconds": 17.12
+    },
+    {
+      "text": "領到",
+      "startSeconds": 17.12,
+      "endSeconds": 17.44,
+      "separatorBefore": ""
+    },
+    {
+      "text": "薪水，",
+      "startSeconds": 17.44,
+      "endSeconds": 18.4,
+      "separatorBefore": ""
+    },
+    {
+      "text": "我",
+      "startSeconds": 18.4,
+      "endSeconds": 18.56,
+      "separatorBefore": ""
+    },
+    {
+      "text": "沒有",
+      "startSeconds": 18.56,
+      "endSeconds": 18.88,
+      "separatorBefore": ""
+    },
+    {
+      "text": "先",
+      "startSeconds": 18.88,
+      "endSeconds": 19.04,
+      "separatorBefore": ""
+    },
+    {
+      "text": "買",
+      "startSeconds": 19.04,
+      "endSeconds": 19.2,
+      "separatorBefore": ""
+    },
+    {
+      "text": "自己",
+      "startSeconds": 19.2,
+      "endSeconds": 19.467,
+      "separatorBefore": ""
+    },
+    {
+      "text": "的",
+      "startSeconds": 19.467,
+      "endSeconds": 19.6,
+      "separatorBefore": ""
+    },
+    {
+      "text": "東西。",
+      "startSeconds": 19.6,
+      "endSeconds": 20.8,
+      "separatorBefore": ""
+    },
+    {
+      "text": "我去",
+      "startSeconds": 20.8,
+      "endSeconds": 21.12,
+      "separatorBefore": ""
+    },
+    {
+      "text": "買",
+      "startSeconds": 21.12,
+      "endSeconds": 21.2,
+      "separatorBefore": ""
+    },
+    {
+      "text": "了",
+      "startSeconds": 21.2,
+      "endSeconds": 21.32,
+      "separatorBefore": ""
+    },
+    {
+      "text": "一台",
+      "startSeconds": 21.32,
+      "endSeconds": 21.76,
+      "separatorBefore": ""
+    },
+    {
+      "text": "小小的",
+      "startSeconds": 21.76,
+      "endSeconds": 22.24,
+      "separatorBefore": ""
+    },
+    {
+      "text": "收音機，",
+      "startSeconds": 22.24,
+      "endSeconds": 23.12,
+      "separatorBefore": ""
+    },
+    {
+      "text": "寄回",
+      "startSeconds": 23.12,
+      "endSeconds": 23.44,
+      "separatorBefore": ""
+    },
+    {
+      "text": "家",
+      "startSeconds": 23.44,
+      "endSeconds": 23.6,
+      "separatorBefore": ""
+    },
+    {
+      "text": "給",
+      "startSeconds": 23.6,
+      "endSeconds": 23.76,
+      "separatorBefore": ""
+    },
+    {
+      "text": "你",
+      "startSeconds": 23.76,
+      "endSeconds": 23.84,
+      "separatorBefore": ""
+    },
+    {
+      "text": "阿公。",
+      "startSeconds": 23.84,
+      "endSeconds": 25.12,
+      "separatorBefore": ""
+    },
+    {
+      "text": "他",
+      "startSeconds": 25.12,
+      "endSeconds": 25.28,
+      "separatorBefore": ""
+    },
+    {
+      "text": "每天",
+      "startSeconds": 25.28,
+      "endSeconds": 25.6,
+      "separatorBefore": ""
+    },
+    {
+      "text": "傍晚",
+      "startSeconds": 25.6,
+      "endSeconds": 26.16,
+      "separatorBefore": ""
+    },
+    {
+      "text": "都會",
+      "startSeconds": 26.16,
+      "endSeconds": 26.4,
+      "separatorBefore": ""
+    },
+    {
+      "text": "坐在",
+      "startSeconds": 26.4,
+      "endSeconds": 26.72,
+      "separatorBefore": ""
+    },
+    {
+      "text": "門口",
+      "startSeconds": 26.72,
+      "endSeconds": 27.2,
+      "separatorBefore": ""
+    },
+    {
+      "text": "聽",
+      "startSeconds": 27.2,
+      "endSeconds": 27.36,
+      "separatorBefore": ""
+    },
+    {
+      "text": "廣播。",
+      "startSeconds": 27.36,
+      "endSeconds": 27.92,
+      "separatorBefore": ""
+    },
+    {
+      "text": "後來",
+      "startSeconds": 29.12,
+      "endSeconds": 29.6
+    },
+    {
+      "text": "那台",
+      "startSeconds": 29.6,
+      "endSeconds": 29.92,
+      "separatorBefore": ""
+    },
+    {
+      "text": "收音機",
+      "startSeconds": 29.92,
+      "endSeconds": 30.4,
+      "separatorBefore": ""
+    },
+    {
+      "text": "壞了，",
+      "startSeconds": 30.4,
+      "endSeconds": 31.12,
+      "separatorBefore": ""
+    },
+    {
+      "text": "他",
+      "startSeconds": 31.12,
+      "endSeconds": 31.28,
+      "separatorBefore": ""
+    },
+    {
+      "text": "也",
+      "startSeconds": 31.28,
+      "endSeconds": 31.44,
+      "separatorBefore": ""
+    },
+    {
+      "text": "捨不得",
+      "startSeconds": 31.44,
+      "endSeconds": 31.84,
+      "separatorBefore": ""
+    },
+    {
+      "text": "丟。",
+      "startSeconds": 31.84,
+      "endSeconds": 32.96,
+      "separatorBefore": ""
+    },
+    {
+      "text": "很多",
+      "startSeconds": 32.96,
+      "endSeconds": 33.28,
+      "separatorBefore": ""
+    },
+    {
+      "text": "年",
+      "startSeconds": 33.28,
+      "endSeconds": 33.44,
+      "separatorBefore": ""
+    },
+    {
+      "text": "以後",
+      "startSeconds": 33.44,
+      "endSeconds": 33.84,
+      "separatorBefore": ""
+    },
+    {
+      "text": "我",
+      "startSeconds": 33.84,
+      "endSeconds": 34,
+      "separatorBefore": ""
+    },
+    {
+      "text": "才",
+      "startSeconds": 34,
+      "endSeconds": 34.16,
+      "separatorBefore": ""
+    },
+    {
+      "text": "知道，",
+      "startSeconds": 34.16,
+      "endSeconds": 34.88,
+      "separatorBefore": ""
+    },
+    {
+      "text": "他在",
+      "startSeconds": 34.88,
+      "endSeconds": 35.2,
+      "separatorBefore": ""
+    },
+    {
+      "text": "背面",
+      "startSeconds": 35.2,
+      "endSeconds": 35.68,
+      "separatorBefore": ""
+    },
+    {
+      "text": "貼",
+      "startSeconds": 35.68,
+      "endSeconds": 35.84,
+      "separatorBefore": ""
+    },
+    {
+      "text": "了一",
+      "startSeconds": 35.84,
+      "endSeconds": 36.08,
+      "separatorBefore": ""
+    },
+    {
+      "text": "張紙，",
+      "startSeconds": 36.08,
+      "endSeconds": 36.96,
+      "separatorBefore": ""
+    },
+    {
+      "text": "上面",
+      "startSeconds": 36.96,
+      "endSeconds": 37.12,
+      "separatorBefore": ""
+    },
+    {
+      "text": "寫著，",
+      "startSeconds": 37.12,
+      "endSeconds": 38.16,
+      "separatorBefore": ""
+    },
+    {
+      "text": "兒子",
+      "startSeconds": 38.16,
+      "endSeconds": 38.72,
+      "separatorBefore": ""
+    },
+    {
+      "text": "第",
+      "startSeconds": 38.72,
+      "endSeconds": 38.96,
+      "separatorBefore": ""
+    },
+    {
+      "text": "一份",
+      "startSeconds": 38.96,
+      "endSeconds": 39.28,
+      "separatorBefore": ""
+    },
+    {
+      "text": "薪水。",
+      "startSeconds": 39.28,
+      "endSeconds": 39.8,
+      "separatorBefore": ""
+    },
+    {
+      "text": "我",
+      "startSeconds": 40.96,
+      "endSeconds": 41.12
+    },
+    {
+      "text": "一直",
+      "startSeconds": 41.12,
+      "endSeconds": 41.44,
+      "separatorBefore": ""
+    },
+    {
+      "text": "記得",
+      "startSeconds": 41.44,
+      "endSeconds": 41.76,
+      "separatorBefore": ""
+    },
+    {
+      "text": "的，",
+      "startSeconds": 41.76,
+      "endSeconds": 42.4,
+      "separatorBefore": ""
+    },
+    {
+      "text": "其實",
+      "startSeconds": 42.4,
+      "endSeconds": 42.56,
+      "separatorBefore": ""
+    },
+    {
+      "text": "不是",
+      "startSeconds": 42.56,
+      "endSeconds": 42.88,
+      "separatorBefore": ""
+    },
+    {
+      "text": "那",
+      "startSeconds": 42.88,
+      "endSeconds": 42.96,
+      "separatorBefore": ""
+    },
+    {
+      "text": "筆錢。",
+      "startSeconds": 42.96,
+      "endSeconds": 44.16,
+      "separatorBefore": ""
+    },
+    {
+      "text": "是",
+      "startSeconds": 44.16,
+      "endSeconds": 44.32,
+      "separatorBefore": ""
+    },
+    {
+      "text": "他",
+      "startSeconds": 44.32,
+      "endSeconds": 44.48,
+      "separatorBefore": ""
+    },
+    {
+      "text": "收到",
+      "startSeconds": 44.48,
+      "endSeconds": 44.8,
+      "separatorBefore": ""
+    },
+    {
+      "text": "包裹",
+      "startSeconds": 44.8,
+      "endSeconds": 45.12,
+      "separatorBefore": ""
+    },
+    {
+      "text": "以後，",
+      "startSeconds": 45.12,
+      "endSeconds": 45.76,
+      "separatorBefore": ""
+    },
+    {
+      "text": "打電話",
+      "startSeconds": 45.76,
+      "endSeconds": 46.24,
+      "separatorBefore": ""
+    },
+    {
+      "text": "來，",
+      "startSeconds": 46.24,
+      "endSeconds": 46.8,
+      "separatorBefore": ""
+    },
+    {
+      "text": "只說",
+      "startSeconds": 46.8,
+      "endSeconds": 47.04,
+      "separatorBefore": ""
+    },
+    {
+      "text": "了",
+      "startSeconds": 47.04,
+      "endSeconds": 47.2,
+      "separatorBefore": ""
+    },
+    {
+      "text": "一句，",
+      "startSeconds": 47.2,
+      "endSeconds": 48.24,
+      "separatorBefore": ""
+    },
+    {
+      "text": "你在",
+      "startSeconds": 48.24,
+      "endSeconds": 48.48,
+      "separatorBefore": ""
+    },
+    {
+      "text": "外面",
+      "startSeconds": 48.48,
+      "endSeconds": 49.04,
+      "separatorBefore": ""
+    },
+    {
+      "text": "有沒有",
+      "startSeconds": 49.04,
+      "endSeconds": 49.44,
+      "separatorBefore": ""
+    },
+    {
+      "text": "吃飽。",
+      "startSeconds": 49.44,
+      "endSeconds": 50.08,
+      "separatorBefore": ""
+    }
+  ],
+  "timingSource": "elevenlabs",
+  "notice": "Fictional demonstration written for this project. Synthetic stock voice; not a family interview or proof of AI transcription accuracy."
+}

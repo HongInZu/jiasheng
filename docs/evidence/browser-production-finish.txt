@@ -1,0 +1,27 @@
+### Result
+{"finishedAt":"2026-10-22T23:45:32.771Z","passages":["我第一次離開家去工作","大概是20歲那一年","確切是哪一年我真的記不清了","那時候做了很久的火車","行李里只有兩套衣服","還有你阿嬤塞給我的飯團","第一次領到薪水","我沒有先買自己的東西","我去買了一台小小的收音機","寄回家給你阿公他每天傍晚都會坐在門口聽廣播","後來那台收音機壞了,他也捨不得丟","很多年以後,我才知道他在背面貼了一張紙,上面寫著","兒子第一份薪水","我一直記得的,其實不是那筆錢","是他收到包裹以後打電話來","只說了一句","你在外面有沒有吃飽"],"reviewedBeforeConfirmation":false,"storyDisabledBeforeReview":true,"sourceQuotesPreserved":true,"sourceLabel":"原話記憶頁\n標題、章節與下一個問題可以修改。內文直接引用已匯入的逐字稿；修改原話請回到校對。","errors":[]}
+### Ran Playwright code
+```js
+await (async (page) => {
+  await page.getByRole('textbox',{name:'第 1 段逐字稿',exact:true}).waitFor({timeout:120000});
+  const text=await page.locator('.segment-body > textarea').evaluateAll(elements=>elements.map(e=>e.value));
+  const reviewed=await page.getByRole('checkbox').isChecked();
+  const disabled=await page.getByRole('button',{name:'整理成故事',exact:true}).isDisabled();
+  await page.getByRole('checkbox').check();
+  await page.getByRole('button',{name:'整理成故事',exact:true}).click();
+  await page.getByRole('textbox',{name:'故事標題',exact:true}).waitFor();
+  const quotes=await page.locator('.story-quote > p').allTextContents();
+  await page.getByRole('button',{name:'儲存這頁故事',exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('.save-state')?.textContent.includes('已儲存'));
+  return {finishedAt:new Date().toISOString(),passages:text,reviewedBeforeConfirmation:reviewed,storyDisabledBeforeReview:disabled,sourceQuotesPreserved:JSON.stringify(text)===JSON.stringify(quotes),sourceLabel:await page.locator('.story-disclosure').innerText(),errors:await page.getByRole('alert').allTextContents()};
+})(page);
+```
+### Open tabs
+- 0: [家聲模型測試](http://127.0.0.1:5186/scripts/evaluate.html)
+- 1: (current) [家聲 — 把聲音，留在故事裡](http://127.0.0.1:5186/)
+### Page
+- Page URL: http://127.0.0.1:5186/
+- Page Title: 家聲 — 把聲音，留在故事裡
+- Console: 0 errors, 6 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-10-22T23-09-45-560Z.log#L5-L7
