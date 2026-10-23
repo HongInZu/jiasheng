@@ -1,9 +1,10 @@
 ---
 title: "Jiasheng: keep the voice, skip the transcription chore"
-published: false
+published: true
 tags: devchallenge, hf26challenge, opensource, ai
-cover_image: https://jiasheng-family-stories.pages.dev/social-preview.png
 ---
+
+![Jiasheng — keep their voice, keep the story](https://jiasheng-family-stories.pages.dev/social-preview.png)
 
 *This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 3: Slow and Steady](https://dev.to/challenges/hacktoberfest-week3-2026-10-19).*
 

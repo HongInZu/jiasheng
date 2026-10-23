@@ -2,7 +2,7 @@
 
 Turn a family conversation into a story you can hear again. Prepare a few questions, record or import a conversation, review its transcript, and make a portable story page whose quotations link back to the original audio.
 
-[Try Jiasheng](https://jiasheng-family-stories.pages.dev/?lang=en) · [繁體中文](https://jiasheng-family-stories.pages.dev/?lang=zh-TW)
+[Try Jiasheng](https://jiasheng-family-stories.pages.dev/?lang=en) · [繁體中文](https://jiasheng-family-stories.pages.dev/?lang=zh-TW) · [DEV challenge submission](https://dev.to/honginzu/jiasheng-keep-the-voice-skip-the-transcription-chore-53bj)
 
 ![Jiasheng — keep the voice behind a family story](public/social-preview.png)
 

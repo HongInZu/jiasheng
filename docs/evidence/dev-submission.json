@@ -1,0 +1,23 @@
+{
+  "verifiedAt": "2026-10-23T16:30:38.833377+00:00",
+  "articleUrl": "https://dev.to/honginzu/jiasheng-keep-the-voice-skip-the-transcription-chore-53bj",
+  "account": "honginzu",
+  "httpStatusWithoutCookies": 200,
+  "published": true,
+  "tags": [
+    "devchallenge",
+    "hf26challenge",
+    "ai",
+    "opensource"
+  ],
+  "challengeUrl": "https://dev.to/challenges/hacktoberfest-week3-2026-10-19",
+  "demoUrl": "https://jiasheng-family-stories.pages.dev/?lang=en",
+  "sourceUrl": "https://github.com/HongInZu/jiasheng",
+  "partnerCategories": [
+    "Best Use of ElevenLabs"
+  ],
+  "aiDisclosure": "Fully Autonomous",
+  "images": "Cover artwork embedded in article body; cover and app screenshot rendered successfully in DEV preview.",
+  "submissionMethod": "Published one English post using the official Week 3 template and required tags. Dashboard had zero posts before publication.",
+  "browserProof": "output/playwright/dev-published.jpg"
+}
