@@ -1,0 +1,164 @@
+{
+  "test": "One real Whisper ASR job on the public Cloudflare production UI",
+  "sourceCommitReportedByDeployment": "9ffe990",
+  "browser": "Fresh isolated Playwright Chrome session cloudflare-asr; English UI",
+  "fixture": "public/demo-story.mp3 — fictional script and synthetic stock voice; no real family recording",
+  "screenshot": "output/playwright/cloudflare-live.png — captured from the public site and visually inspected",
+  "limitations": "This verifies model execution, review gating, source preservation and playback. It is not a transcription accuracy benchmark or a real-person trial. The confirmation checkbox was exercised by automation after capturing the raw transcript; transcription errors were deliberately retained for evidence.",
+  "observedError": "The original script says 坐了很久的火車; Whisper produced 做了很久的火車. Review remains necessary.",
+  "originalAudioDownload": {
+    "byteIdentical": true,
+    "bytes": 801270,
+    "sha256": "9db4bc2ba3219b87974096275cea89657941a1e8d035cf007351516d8d7af9ec",
+    "method": "Downloaded through Download original audio before transcription; compared with cmp and SHA-256."
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 6,
+    "warning": "Unable to determine content-length from response headers. Will expand buffer when needed."
+  },
+  "result": {
+    "url": "https://jiasheng-family-stories.pages.dev/?lang=en",
+    "startedAt": "2026-10-23T15:16:31.563Z",
+    "finishedAt": "2026-10-23T15:18:20.219Z",
+    "passages": [
+      "我第一次離開家去工作",
+      "大概是20歲那一年",
+      "確切是哪一年我真的記不清了",
+      "那時候做了很久的火車",
+      "行李里只有兩套衣服",
+      "還有你阿嬤塞給我的飯團",
+      "第一次領到薪水",
+      "我沒有先買自己的東西",
+      "我去買了一台小小的收音機",
+      "寄回家給你阿公他每天傍晚都會坐在門口聽廣播",
+      "後來那台收音機壞了,他也捨不得丟",
+      "很多年以後,我才知道他在背面貼了一張紙,上面寫著",
+      "兒子第一份薪水",
+      "我一直記得的,其實不是那筆錢",
+      "是他收到包裹以後打電話來",
+      "只說了一句",
+      "你在外面有沒有吃飽"
+    ],
+    "reviewedBeforeConfirmation": false,
+    "storyDisabledBeforeReview": true,
+    "sourceQuotesPreserved": true,
+    "finalQuotePlayback": {
+      "currentTime": 47.707094,
+      "duration": 50,
+      "paused": false
+    },
+    "saved": {
+      "transcriptModel": "Whisper base · q8 · 華語 · 本機瀏覽器",
+      "transcriptDurationMs": 62645,
+      "duration": 50,
+      "audioBytes": 801270,
+      "sourceKind": "uploaded",
+      "segments": [
+        {
+          "id": "segment-1",
+          "start": 0,
+          "end": 2.3,
+          "text": "我第一次離開家去工作"
+        },
+        {
+          "id": "segment-2",
+          "start": 2.3,
+          "end": 4.86,
+          "text": "大概是20歲那一年"
+        },
+        {
+          "id": "segment-3",
+          "start": 4.86,
+          "end": 8.7,
+          "text": "確切是哪一年我真的記不清了"
+        },
+        {
+          "id": "segment-4",
+          "start": 8.7,
+          "end": 11.26,
+          "text": "那時候做了很久的火車"
+        },
+        {
+          "id": "segment-5",
+          "start": 11.26,
+          "end": 13.32,
+          "text": "行李里只有兩套衣服"
+        },
+        {
+          "id": "segment-6",
+          "start": 13.32,
+          "end": 16.64,
+          "text": "還有你阿嬤塞給我的飯團"
+        },
+        {
+          "id": "segment-7",
+          "start": 16.64,
+          "end": 18.42,
+          "text": "第一次領到薪水"
+        },
+        {
+          "id": "segment-8",
+          "start": 18.42,
+          "end": 20.74,
+          "text": "我沒有先買自己的東西"
+        },
+        {
+          "id": "segment-9",
+          "start": 20.74,
+          "end": 23.04,
+          "text": "我去買了一台小小的收音機"
+        },
+        {
+          "id": "segment-10",
+          "start": 23.04,
+          "end": 28.32,
+          "text": "寄回家給你阿公他每天傍晚都會坐在門口聽廣播"
+        },
+        {
+          "id": "segment-11",
+          "start": 28.32,
+          "end": 32.56,
+          "text": "後來那台收音機壞了,他也捨不得丟"
+        },
+        {
+          "id": "segment-12",
+          "start": 32.56,
+          "end": 37.8,
+          "text": "很多年以後,我才知道他在背面貼了一張紙,上面寫著"
+        },
+        {
+          "id": "segment-13",
+          "start": 37.8,
+          "end": 40.36,
+          "text": "兒子第一份薪水"
+        },
+        {
+          "id": "segment-14",
+          "start": 40.36,
+          "end": 43.8,
+          "text": "我一直記得的,其實不是那筆錢"
+        },
+        {
+          "id": "segment-15",
+          "start": 43.8,
+          "end": 46.4,
+          "text": "是他收到包裹以後打電話來"
+        },
+        {
+          "id": "segment-16",
+          "start": 46.4,
+          "end": 47.68,
+          "text": "只說了一句"
+        },
+        {
+          "id": "segment-17",
+          "start": 47.68,
+          "end": 49.72,
+          "text": "你在外面有沒有吃飽"
+        }
+      ]
+    },
+    "errors": []
+  }
+}

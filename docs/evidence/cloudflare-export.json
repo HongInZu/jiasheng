@@ -1,0 +1,15 @@
+{
+  "files": [
+    "original-audio.mp3",
+    "session.json",
+    "transcript.txt",
+    "START-HERE.txt",
+    "story.html"
+  ],
+  "audioBytes": 801270,
+  "originalAudioIdentical": true,
+  "segments": 4,
+  "source": "demo",
+  "startHere": true,
+  "htmlHasSourceTime": true
+}

@@ -21,6 +21,8 @@ For “Slow and Steady,” I wanted the payoff to be one finished keepsake from 
 
 **[Try Jiasheng on Cloudflare Pages](https://jiasheng-family-stories.pages.dev/?lang=en)**
 
+![The live Jiasheng app in English: a quiet memory shelf and an invitation to explore a family story](https://raw.githubusercontent.com/HongInZu/jiasheng/main/docs/images/app-en.png)
+
 Open the sample story, then play a passage and export its memory archive. English controls and English translations of the sample help explain the experience; its Chinese source words remain intact.
 
 The sample, **“The radio sent home with a first salary,”** is a fictional family story with a synthetic stock voice. Its script and chapters were prepared for the demonstration, and its audio positions use the provider’s word timings. It shows the reading, playback, and export experience; it is not a real family interview or a prerecorded claim of successful speech recognition.
@@ -45,7 +47,7 @@ The important boundary comes after transcription: **a language model does not wr
 
 That decision emerged from testing. I tried small Qwen models for opening questions and follow-ups. Their outputs could pass structural checks while still being generic, awkward, or based on an unsupported assumption. I removed those features from the released interface and kept human-written questions.
 
-Whisper also needed scrutiny. On a 50-second synthetic Mandarin fixture, Whisper base improved several words over the smaller model but initially missed the final sentence. Adding one second of silence to the inference buffer recovered it without changing the stored audio. That run took about 56 seconds on an M1 Mac. Homophone errors remained: this was a smoke test, not an accuracy benchmark.
+Whisper also needed scrutiny. On a 50-second synthetic Mandarin fixture, Whisper base improved several words over the smaller model but initially missed the final sentence. Adding one second of silence to the inference buffer recovered it without changing the stored audio. That run took about 56 seconds on an M1 Mac; a fresh-browser run from the public Cloudflare site took about 63 seconds and returned 17 timestamped passages, including the final sentence. Homophone errors remained: these are smoke tests, not an accuracy benchmark.
 
 The app therefore requires transcript review before story assembly. Editing source text invalidates that review. Automated and browser checks cover timestamp validation, source preservation, escaped export HTML, saved audio, and playback from the exported archive. The current version supports recordings up to ten minutes and 100 MB; Mandarin names, dates, regional accents, and Taiwanese still need careful listening. Real family testing has not yet been completed.
 
