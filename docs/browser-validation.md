@@ -25,3 +25,11 @@ The example story is manually arranged; it does not prove model output quality. 
 ## Final released UI and production bundle
 
 After removing experimental language-model controls, the Sites build helper completed successfully. A Vite production preview on the same origin then exercised the released UI: human-written topic preset selection and cycling; approximately 100 MB speech-model notice; real cancellation and restart; a real Whisper base transcription; required review before story creation; and preservation of every transcript passage in the resulting story. See `evidence/browser-production-start.txt` and `evidence/browser-production-finish.txt`. This validates bundled Worker/WASM paths rather than relying only on Vite development imports.
+
+## Public release preparation — 23 October, 23:08 Taiwan
+
+The final Vue/TypeScript production build passed; all 48 automated tests passed in five files. `npm audit --omit=dev` reported no known vulnerabilities.
+
+Sixteen focused browser assertions covered English/Traditional Chinese switching without changing source text, the four labelled demo translations, removal of a translation after its source was edited, English topic questions and timestamp validation, the required transcript-review gate, English story controls preserving all original passages, and no horizontal overflow at a 390-pixel viewport. Desktop landing and mobile story screenshots were visually inspected.
+
+The release also adds keyboard-accessible native upload buttons, a direct original-audio download, and recording guards that pause prior audio and prevent playback while recording. The ZIP now includes bilingual `START-HERE.txt` instructions. The extracted-archive replay check was repeated after removing a machine-specific path from the QA helper: original audio played at 29.12 seconds of its 50-second duration.

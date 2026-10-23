@@ -2,7 +2,11 @@
 
 Turn a family conversation into a story you can hear again. Prepare a few questions, record or import a conversation, review its transcript, and make a portable story page whose quotations link back to the original audio.
 
-Owner-private preview: https://jiasheng-family-stories.a85284960.chatgpt.site
+[Try Jiasheng](https://jiasheng-family-stories.pages.dev/?lang=en) · [繁體中文](https://jiasheng-family-stories.pages.dev/?lang=zh-TW)
+
+![Jiasheng — keep the voice behind a family story](public/social-preview.png)
+
+Choose **Explore a story** to explore a fictional Mandarin recording without downloading a model. The English interface includes labelled translations of that sample; the original words and audio stay unchanged. To use the actual speech model, record or import a short Mandarin conversation and choose local transcription.
 
 ## Run
 
@@ -22,10 +26,24 @@ npm run build
 
 - Prepare editable, human-written conversation questions from topic presets.
 - Record with the browser after confirming that participants agree, or import an audio file.
+- Download the original recording immediately, before transcription or story creation.
 - Transcribe locally with Whisper base. Listen, correct the wording and timestamps, and confirm the transcript before making a story.
 - Arrange the reviewed passages into a story in their original order. Edit its title, chapter headings and next question yourself; the story body consists of the reviewed passages themselves.
 - Click a passage to seek the actual attached recording. Text without a timestamp has no invented audio link.
-- Save audio, photos and stories in this browser's IndexedDB. Export a ZIP containing an independent HTML story, original media, transcript and metadata. Extract the entire ZIP before opening `story.html`.
+- Save audio, photos and stories in this browser's IndexedDB. Export a ZIP containing an independent HTML story, original media, transcript, metadata, and a bilingual `START-HERE.txt`. Extract the entire ZIP before opening `story.html`.
+
+## Deploy to Cloudflare Pages
+
+The production site is a static direct-upload Pages project. With Wrangler installed and authenticated to your own Cloudflare account:
+
+```sh
+npm ci
+npm run build
+wrangler pages project create YOUR_PROJECT_NAME --production-branch main
+wrangler pages deploy dist --project-name YOUR_PROJECT_NAME --branch main
+```
+
+For the existing Jiasheng deployment, reuse `jiasheng-family-stories` and skip project creation. `wrangler.toml` declares the output directory. Do not upload the repository root. No backend database or inference secrets are needed.
 
 ## Privacy and boundaries
 
@@ -43,7 +61,7 @@ No application feature depends on Creative Claw or ElevenLabs at runtime. Those 
 
 ## Models and source integrity
 
-- [Whisper base](https://huggingface.co/openai/whisper-base), Apache 2.0 model card; ONNX q8 encoder and decoder, pinned revision.
+- [Whisper base](https://huggingface.co/openai/whisper-base), whose Hugging Face model card lists Apache 2.0; ONNX q8 encoder and decoder, pinned revision. The [upstream Whisper repository](https://github.com/openai/whisper) uses MIT. Model weights are fetched from their host, not included in this repository.
 - [Transformers.js](https://huggingface.co/docs/transformers.js/v3.8.1/index) in a dedicated browser Worker with one WASM thread. Each job releases its worker after completion, cancellation or failure.
 
 `src/workers/ai-protocol.ts` validates speech output and timestamps. The story binds every original passage directly to its source, without model-selected grouping or rewriting. `src/domain.ts` validates the resulting story. Raw source text is escaped in HTML exports. A failed AI job never silently becomes a prerecorded success.

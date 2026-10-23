@@ -9,7 +9,7 @@ describe('portable story archive', () => {
     const session = createSession({ person: '虛構媽媽', sourceKind: 'demo', sourceNote: '虛構人物，不是真實訪談', transcriptReviewed: true, audio: new Blob([bytes], { type: 'audio/webm;codecs=opus' }), audioName: '../../unsafe.webm', photo: new Blob([new Uint8Array([33, 99])], { type: 'image/png' }), photoName: '回憶.png', segments: parseTranscript('[00:03] 媽媽：我不確定是哪一年。') });
     session.story = buildExtractiveStory(session);
     const archive = await JSZip.loadAsync(await (await exportArchive(session)).arrayBuffer());
-    expect(Object.keys(archive.files).sort()).toEqual(['original-audio.webm', 'photo.png', 'session.json', 'story.html', 'transcript.txt']);
+    expect(Object.keys(archive.files).sort()).toEqual(['START-HERE.txt', 'original-audio.webm', 'photo.png', 'session.json', 'story.html', 'transcript.txt']);
     expect(await archive.file('original-audio.webm')!.async('uint8array')).toEqual(bytes);
     expect(await archive.file('photo.png')!.async('uint8array')).toEqual(new Uint8Array([33, 99]));
     const metadata = JSON.parse(await archive.file('session.json')!.async('string'));

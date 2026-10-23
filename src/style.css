@@ -54,3 +54,40 @@
  .audio-dock{min-height:87px}
  .toast{bottom:104px}
 }
+
+/* Interface language controls and explicitly labelled demo translations. */
+.language-switch { display:flex; gap:3px; padding:3px; border:1px solid var(--line, #e5ded3); border-radius:8px; flex-shrink:0; order:3; margin-left:14px; }
+.language-switch button { min-width:34px; min-height:30px; border:0; background:transparent; border-radius:5px; font:inherit; font-size:12px; color:#716b61; cursor:pointer; }
+.language-switch button[aria-pressed="true"] { background:#ede4d6; color:#704b35; font-weight:700; }
+.language-switch button:focus-visible, .photo-drop:focus-visible { outline:2px solid #8b533c; outline-offset:4px; }
+.file-input { display:none; }
+button.photo-drop { width:100%; font:inherit; color:inherit; background:transparent; cursor:pointer; }
+button.photo-drop:disabled { cursor:not-allowed; opacity:.55; }
+.audio-original-download { grid-column:1 / -1; justify-self:start; }
+.demo-english-overview { padding:24px; margin:26px 0 0; border:1px solid #d7c5ad; border-radius:10px; background:#f7f0e5; color:#574637; }
+.demo-english-overview > span { font-size:10px; font-weight:700; letter-spacing:.14em; }
+.demo-english-overview h2 { font-size:26px; line-height:1.3; margin:12px 0; }
+.demo-english-overview p { font-size:16px; line-height:1.7; }
+.demo-english-overview small { display:block; font-size:12px; line-height:1.65; color:#756a5e; }
+.demo-translation { margin:14px 0; padding:12px 16px; border-left:2px solid #bfa98c; text-align:left; background:#f8f4ec; }
+.demo-translation > span { font-family:var(--font-sans, sans-serif); font-size:10px; letter-spacing:.03em; color:#82705a; }
+.story-pullquote .demo-translation p, .story-quote .demo-translation p, .segment-body .demo-translation p { margin:6px 0 0; font-family:var(--font-sans, sans-serif); font-size:15px; line-height:1.7; font-weight:400; color:#5d554a; }
+.english-ui .landing h1 { letter-spacing:-.045em; }
+.english-ui .brand-name { letter-spacing:.07em; }
+.english-ui .view-heading h1 { letter-spacing:-.025em; }
+.english-ui .field, .english-ui .button, .english-ui .text-button, .english-ui .topbar { letter-spacing:normal; }
+.english-ui .topic-suggestions { flex-wrap:wrap; }
+.english-ui .audio-ready { flex-wrap:wrap; }
+.english-ui .topbar-note { font-size:11px; }
+@media (max-width:760px) {
+  .language-switch { margin-left:auto; }
+  .english-ui .topbar-note { display:none; }
+  .english-ui .topbar { gap:8px; }
+  .english-ui .breadcrumb { min-width:0; overflow:hidden; }
+  .english-ui .breadcrumb > span:first-of-type { display:none; }
+  .english-ui .step-nav small { font-size:10px; }
+  .english-ui .story-toolbar { gap:12px; align-items:flex-start; flex-wrap:wrap; }
+  .english-ui .story-toolbar > div { flex-wrap:wrap; }
+  .demo-english-overview { padding:18px; }
+  .demo-english-overview h2 { font-size:23px; }
+}

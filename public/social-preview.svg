@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f3efe7"/>
+  <path d="M0 590H1200" stroke="#d9d2c7"/>
+  <text x="76" y="87" fill="#975d46" font-family="Georgia,serif" font-size="30" letter-spacing="5">JIASHENG</text>
+  <text x="76" y="133" fill="#71685d" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">A SMALL HOME FOR YOUR MEMORIES</text>
+  <text x="76" y="245" fill="#302e28" font-family="Georgia,serif" font-size="65">Keep the voice</text>
+  <text x="76" y="325" fill="#302e28" font-family="Georgia,serif" font-size="65">behind a</text>
+  <text x="76" y="405" fill="#975d46" font-family="Georgia,serif" font-size="65" font-style="italic">family story.</text>
+  <text x="79" y="485" fill="#71685d" font-family="Arial,sans-serif" font-size="22">Their words. Original audio. A portable keepsake.</text>
+  <g transform="translate(808 142)">
+    <rect x="8" y="16" width="270" height="344" rx="12" fill="#ded6c8"/>
+    <rect width="270" height="344" rx="12" fill="#fffdf8" stroke="#d2c5b3"/>
+    <path d="M30 0V344" stroke="#c8b6a3"/>
+    <rect x="65" y="47" width="170" height="125" rx="5" fill="#e7ddca"/>
+    <path d="M97 114L150 70L205 114V155H97Z" fill="#b87d5e"/>
+    <path d="M87 116L150 62L215 116" fill="none" stroke="#725a46" stroke-width="8" stroke-linejoin="round"/>
+    <rect x="138" y="117" width="25" height="38" fill="#f4ebdc"/>
+    <g stroke="#975d46" stroke-width="5" stroke-linecap="round">
+      <path d="M70 226V242M84 217V251M98 209V259M112 220V248M126 201V267M140 214V254M154 226V242M168 217V251M182 209V259M196 221V247M210 226V242M224 218V250"/>
+    </g>
+    <path d="M68 295H226M68 309H174" stroke="#c7bdad" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="79" y="602" fill="#71685d" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">LOCAL AI TRANSCRIPTION · REVIEWED ORIGINAL WORDS · PORTABLE ARCHIVES</text>
+</svg>
